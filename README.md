@@ -1,1 +1,1 @@
-# Fast-Lower-Bound-On-FAG
+# Fast Lower Bounds of Functions on Finite Abelian Groups
