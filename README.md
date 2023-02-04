@@ -28,9 +28,9 @@ If already known that the set $S$, such that $\operatorname{Im}(f)$ is a subset 
 ```
 the output $Q$ is the Gram matrix with rows and columns indexed by Index,and lb is the lower bound.
 ### rounding
-For a cnf/wcnf file, to use
+For a cnf/wcnf file with path equals to File, to use
 ```
-[Q,f,Index,y_Gram,y_Moment,lb]=OurRounding(File,k);
+[Q,f,Index,y_Gram,y_Moment,lb]=OurRounding(File,num_basis);
 ```
 to get the rounding reslut
 y_Gram and y_Moment is the rounding results by null space of Gram matrix and rank-1 approx of Moment matrix.
