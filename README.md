@@ -10,10 +10,10 @@ This is the a tool to compute the lower bound of function on finite abelian grou
 The Numerical experiments of this paper can be performed by "Numerical_experiments.m"
 
 ### construct a function on fintie abelian group  
-$$f:G \mapsto \mathbb{Z},~G=\prod_{i=1}^{k}  \mathbb{C}_{n_i},$$
+$$f:G \mapsto \mathbb{Z},~G=\prod_{i=1}^{k}  C_{n_i},$$
 with 
 
-$$f=\sum_{j=1}^{s}a_jx^{\alpha_j}, ~x_i \in   \mathbb{C}_{n_i}$$
+$$f=\sum_{j=1}^{s}a_jx^{\alpha_j}, ~x_i \in  C_{n_i}$$
 Let n be a 1-dim array such that n(i)=n_i, then set
 ```
 f=CZ(n);
