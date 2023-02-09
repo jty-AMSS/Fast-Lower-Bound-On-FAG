@@ -1,5 +1,5 @@
 c CNF
-c from Selman's wff generator
+c from my generator
 p cnf  3  4
 1 0
 2 0
