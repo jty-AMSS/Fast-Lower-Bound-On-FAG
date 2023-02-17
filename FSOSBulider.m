@@ -5,7 +5,7 @@ end
 
 
 [f,w,~]=DICMS2function(path);
-if sparsity<3
+if (sparsity<3)&&(sparsity>0)
     sparsity=sparsity-1e-10;
 end
 if abs(sparsity-round(sparsity))>0
