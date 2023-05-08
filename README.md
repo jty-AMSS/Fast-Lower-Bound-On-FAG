@@ -22,7 +22,7 @@ f(alpha_j)=a_j;
 end
 ```
 ### compute fast lower bound  
-If already known that the set $S$, such that $\operatorname{Im}(f)$ is a subset of $S$, to compute the lower bound with input parameters d and k, just by:
+If already known that the set $S$, such that $Im(f)$ is a subset of $S$, to compute the lower bound with input parameters d and k, just by:
 ```
 [Q,lb,Index]=FastLowerBound_Poly(f,d,S,k)
 ```
