@@ -3,9 +3,10 @@
 This is the a tool to compute the lower bound of function on finite abelian groups, which is based on SOS relaxation.  
 
 ## Dependencies
-- Matlab 2016b
+- Matlab 
 - [SDPNAL+](https://blog.nus.edu.sg/mattohkc/softwares/sdpnalplus/)
 
+We have test it in Matlab 2016b and Matlab 2020b
 ## Usage
 The Numerical experiments of this paper can be performed by "Numerical_experiments.m"
 
