@@ -1,6 +1,6 @@
 # Fast Lower Bounds of Functions on Finite Abelian Groups
 
-This is the a tool to compute the lower bound of function on finite abelian groups, which is based on SOS relaxation.  
+This is the a tool to compute the lower bounds of functions on finite abelian groups, which is based on FSOS relaxation.  
 
 ## Dependencies
 - Matlab 
