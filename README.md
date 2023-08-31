@@ -8,7 +8,7 @@ This is the a tool to compute the lower bounds of functions on finite abelian gr
 
 We have test it in Matlab 2016b and Matlab 2020b
 ## Usage
-The Numerical experiments of this paper can be performed by "Numerical_experiments.m"
+
 
 ### construct a function on fintie abelian group  
 $$f:G \mapsto \mathbb{Z},~G=\prod_{i=1}^{k}  C_{n_i},$$
@@ -35,3 +35,6 @@ For a cnf/wcnf file with path equals to File, to use
 ```
 to get the rounding reslut
 y_Gram and y_Moment is the rounding results by null space of Gram matrix and rank-1 approx of Moment matrix.
+
+### demos
+The Numerical experiments of the paper can be performed by "Numerical_experiments.m"
