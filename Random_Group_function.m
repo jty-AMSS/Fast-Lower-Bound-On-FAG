@@ -5,11 +5,14 @@ if nargin==2
     deg_bound=-1;
 end
 
+if nargin<4
+    min_value=0;
+end
 if ~all(N==2)
     [f,m]=rand_int_Zn_function(N,num_terms,deg_bound);
     
 else
-    [f,m]=rand_int_Z2_function(N,num_terms,deg_bound);
+    [f,m]=rand_int_Z2_function(N,num_terms,deg_bound);%rand_int_Z2_function
 end
 V=CZifft(f);
 f=f-min(V(:));
@@ -22,26 +25,28 @@ function [f,m]=rand_int_Z2_function(N,num_terms,deg_bound)
 n=length(N);
 f=CZ(N);
 m=0;
-for i=1:num_terms
+% for i=1:num_terms
+while(length(f)<num_terms)
     if deg_bound~=-1
         t=zeros(1,n);
         for i=1:deg_bound
-            i=randi(n);
-            t(i)=t(i)+1;
+            k=randi(n);
+            t(k)=t(k)+1;
         end
-        for i=find(t)
-            t(i)=randi(t(i));
-        end
-        k=randi(10);
-        k=k-5;
+        %         for i=find(t)
+        %             t(i)=randi(t(i));
+        %         end
+        t=1.0*(t>0);
+        k=randi(11);
+        k=k-6;
         m=m+abs(k);
         f(t)=k;
     else
         t=rand(1,n).*N;
         t=round(t);
         t=mod(t,N);
-        k=randi(10);
-        k=k-5;
+        k=randi(11);
+        k=k-6;
         m=m+abs(k);
         f(t)=k;
     end
