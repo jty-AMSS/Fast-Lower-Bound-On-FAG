@@ -3,7 +3,7 @@
 d=2;
 n=25;
 degree_bound=3;
-num_terms=500;
+num_terms=450;
 Table=[];
 F={};M=[];
 for i=1:10
