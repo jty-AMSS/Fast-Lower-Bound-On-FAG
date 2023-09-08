@@ -5,7 +5,8 @@ This is the a tool to compute the lower bounds of functions on finite abelian gr
 ## Dependencies
 - Matlab 
 - [SDPNAL+](https://blog.nus.edu.sg/mattohkc/softwares/sdpnalplus/)
-
+- [CVX](http://cvxr.com/cvx/) (optional)
+  
 We have test it in Matlab 2016b and Matlab 2020b
 ## Usage
 
