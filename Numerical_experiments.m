@@ -12,26 +12,14 @@ Demo_Random_example2
 % Set the cnf/ wcnf File into the "dir" directory, 
 % set the d=degree of approx Polynomial ;
 % number of basis= sparsity* |supp(f)|;
-% here is an example of ?
+% here is an example of 
 %d = 2, k = 1.5 |supp(f)|,?l = 0, m = sum of  weights in A.2.2
 d=2;
 sparsity=1.5;
 Running_Dir;
 % Table is the result
 % rows of Table is: [Lower bound ,time costs, degree of approx polynomial ,number of basis];
-%%  The Numerical experiment in A.3.1 experiment on random problems.
-T={};
-for nvar=[25,30,35,40]
-for d=[3,5,7]
-T{nvar,d}=[]
-for num=0:9
-[y_rho_i_N,y_2_i,y_Gram,y_Moment,f]=random_MAX_SAT(nvar,d,(nvar*10+d)*100+num);
-T{nvar,d}=[T{nvar,d};y_rho_i_N,y_2_i,y_Gram,y_Moment];
-end
-end
-end
-% T is the result
-% Rows of Table is:  T{nvar,d} the rounding results of [rho_i^N, 2^{-(i-1)}, Gram,  Moment]
+
 %%  The Numerical experiment in A.3.2 experiment on benchmark problems.
 T=[];
 File='1.wcnf';
